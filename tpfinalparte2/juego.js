@@ -4,6 +4,11 @@ class juego {
     this.crearEnemigos();
     this.crearPlataforma();
     this.crearPersonaje();
+    this.crearPantalla();
+  }
+  
+  crearPantalla(){
+   this.pantallaActual();
   }
 
   crearPersonaje() {

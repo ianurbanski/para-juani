@@ -1,19 +1,39 @@
+let pantallaActual = "inicio";
+
 class pantalla{
  constructor(){
-   this.pantalla = instrucciones; 
-   this.pantalla = creditos;
-   this.pantalla = juego;
+   this.pantalla = inicio; 
    this.pantalla = perdiste;
    this.pantalla = ganaste;
-   this.juego = false;
-   this.creditos = false;
-   this.instrucciones = false;
+   this.pantalla = instrucciones;
+   this.pantalla = creditos;
+   this.inicio = false;
    this.perdiste = false;
    this.ganaste = false;
  }
  
  dibujar(){
     
+ }
+ 
+ pantallaActual(){
+   if(pantallaActual === "inicio"){
+    boton();
+    boton1();
+    boton4();
+   } if (pantallaActual === "perdiste"){
+    boton3();
+    boton4();
+   } if (pantallaActual === "ganaste"){
+   boton3();
+   boton4();
+   } if (pantallaActual === "instrucciones"){
+    boton1();
+    boton2();
+   } if (pantallaActual === "creditos"){
+    boton1();
+    boton2();
+   }
  }
  
  instrucciones(){
